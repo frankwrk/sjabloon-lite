@@ -1,6 +1,3 @@
-# require "fileutils"
-# require "shellwords"
-
 def add_gems
   gem "foreman", "~> 0.85.0"
   gem "webpacker", "~> 3.5", ">= 3.5.5"
@@ -62,14 +59,18 @@ def remove_default_assets
 end
 
 def add_foreman
-file "Procfile", <<-CODE
+file "Procfile.dev", <<-CODE
 web: rails server
 webpack: ./bin/webpack-dev-server --watch --colors --progress
+CODE
+
+file ".foreman", <<-CODE
+procfile: Procfile.dev
 CODE
 end
 
 def setup_application_pack_file
-  run "rm frontend/packs/application.js"
+  remove_file "frontend/packs/application.js"
 
 file "frontend/packs/application.js", <<-CODE
 /* eslint no-console:0 */
@@ -115,4 +116,11 @@ after_bundle do
   git :init
   git add: "."
   git commit: %Q{ -m "Initial commit" }
+
+  say "============================================================="
+  say ""
+  say "💡 Sjabloon LITE is successfully installed! ✨", :yellow
+  say "For more features, like emails, UI components and billing, check out https://www.getsjabloon.com (💡 cmd + click to open).", :yellow
+  say ""
+  say "============================================================="
 end

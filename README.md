@@ -34,3 +34,9 @@ Learn more at [www.getsjabloon.com](https://www.getsjabloon.com)
 ```bash
 rails new something_amazing -d postgresql -m https://raw.githubusercontent.com/eelcoj/sjabloon-lite/master/template.rb
 ```
+
+## How to run your new app
+
+```bash
+cd into the new created directory and run `foreman start`.
+```
