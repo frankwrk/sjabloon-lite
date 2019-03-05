@@ -1,6 +1,6 @@
 # Sjabloon LITE
 
-_Sjabloon LITE_ is a basic and slimmed-down version of Sjabloon. A Ruby on Rails template to focus on your core product right from the start.
+_Sjabloon LITE_ is a basic and slimmed-down version of Sjabloon. A Rails SaaS starter kit to focus on your core product right from the start.
 
 _Sjabloon LITE_ provides you with a great starting point for your new Rails app with modern front-end tools:
 
@@ -9,23 +9,21 @@ _Sjabloon LITE_ provides you with a great starting point for your new Rails app 
 - [Tailwind](https://github.com/tailwindcss/tailwindcss)
 - [StimulusJS](https://github.com/stimulusjs/stimulus)
 
-It adds and configures all these tools for you, so it's neatly organised and ready for your next product.
+It adds and configures all these tools for you, so it's well organised and ready for your next product.
 
 ## What is [Sjabloon](https://www.getsjabloon.com)?
-Sjabloon is a commercially available template to focus on your core product right from the start. It comes with many features seen in almost every modern SaaS and web app.
-**You can customise Sjabloon to create a template that perfectly fits the needs for your new product**. in addition to the modern front-end tooling provided by _Sjabloon LITE_, it comes with:
+Sjabloon is a commercially available SaaS kit to focus on your core product right from the start. It comes with many features seen in almost every modern SaaS and web app.
+**You can customise Sjabloon to create a template that perfectly fits the needs for your new product**. In addition to the modern front-end tooling provided by _Sjabloon LITE_, it comes with:
 
-- authentication with Devise, inc. setup, configuration and design
-- extensive set of common UI components built with Tailwind
-- custom error pages
-- SMTP configured for various providers (Mailgun, Postmark, Sendgrid)
-- Analytics set up for Google Analytics, Clicky and Simple Analytics
-- Error monitoring, with support forBugsnag, Appsignal, Sentry
+- Authentication with Devise, inc. setup, configuration, emails and design
+- Billing with Stripe
+- Beautiful UI components built with Tailwind
+- Fully designed user dashboard and set up
+- Custom error pages
+- Integrations with SMTP providers (Mailgun, Postmark etc.), analytic tools (Google Analytics, Clicky etc.), customer support (Intercom, Drift etc.) and error monitoring set up (Bugsnag, Sentry etc.)
 - Great looking transactional emails
-- Beautiful user dashboard and set up (easily customisable with Tailwind)
 - GDPR best practices
-- Recurring payment with Stripe
-- Email drip campaign for your users
+- Email drip campaign set up
 
 Learn more at [www.getsjabloon.com](https://www.getsjabloon.com)
 
