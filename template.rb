@@ -39,11 +39,10 @@ CODE
 end
 
 def setup_tailwindcss
-  run "yarn add tailwindcss"
+  run "yarn add tailwindcss@next"
   run "mkdir -p frontend/stylesheets"
-  run "./node_modules/.bin/tailwind init frontend/stylesheets/tailwind.js"
 
-  inject_into_file "./.postcssrc.yml", "\n  tailwindcss: './frontend/stylesheets/tailwind.js'", after: "postcss-cssnext: {}"
+  inject_into_file "./.postcssrc.yml", "\n  tailwindcss: {}", after: "postcss-cssnext: {}"
 
 file "frontend/stylesheets/application.css", <<-CODE
 /* All your Css goes here */
@@ -120,7 +119,8 @@ after_bundle do
   say "============================================================="
   say ""
   say "💡 Sjabloon LITE is successfully installed! ✨", :yellow
-  say "For more features, like emails, UI components and billing, check out https://www.getsjabloon.com (💡 cmd + click to open).", :yellow
+  say "For more features, designed templates, fully configuration,", :yellow
+  say "UI components and billing with Stripe, check out https://www.getsjabloon.com (💡 cmd + click to open).", :yellow
   say ""
   say "============================================================="
 end
